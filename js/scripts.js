@@ -1,6 +1,7 @@
-function Bowl(size, beans, toppings, price) {
+function Bowl(size, beans, meat, toppings, price) {
   this.size = size,
   this.beans = beans,
+  this.meat = meat,
   this.toppings = [],
   this.price = priceCalculation(price);
 }
@@ -15,6 +16,7 @@ Bowl.prototype.showPrice = function() {
 
   $('#bowl-result').append('<p>Bowl size: ' + this.size + '</p>');
   $('#bowl-result').append('<p>Beans: ' + this.beans + '</p>');
+  $('#bowl-result').append('<p>Meat: ' + this.meat + '</p>');
   $('#bowl-result').append('<p>Toppings: ' + asldkfj + '</p>');
   $('#bowl-result').append('<p>Bowl Price: ' + this.price + '</p>');
 }
