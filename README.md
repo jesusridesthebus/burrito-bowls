@@ -15,8 +15,9 @@ This site will enable you to order a burrito bowl, deciding on a size, choosing 
 | ------------- |:-------------:| -----:| 
 | Choose bowl size | regular size | result of regular for bowl size, cost adjusts accordingly | 
 | Choose type of beans | pinto | pinto beans will be added to the bowl, no additional cost | 
-| Choose multiple toppings | chicken, guacamole | chicken & guacamole will be added to the bowl & cost will increase accordingly | 
-| Submit order | regular-sized bowl with pinto beans, chicken & guacamole | Cost is added together for a total of $8 (regular size $5 + chicken $2 + guacamole $1 = $8) | 
+| Choose meat | chicken | chicken will be added to the bowl & cost will increase accordingly | 
+| Choose toppings | pico de gallo | pico de gallo will be added to the bowl, no additional cost |
+| Submit order | regular-sized bowl with pinto beans, chicken & pico de gallo | Cost is added together for a total of $7 (regular size $5 + chicken $2 = $7) | 
 
 ## Setup/Installation Requirements
 
