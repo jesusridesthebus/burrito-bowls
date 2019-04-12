@@ -12,8 +12,6 @@ function priceCalculation(price) {
 
 Bowl.prototype.showPrice = function() {
   $('#bowl-result').empty();
-
-
   $('#bowl-result').append('<p>Bowl size: ' + this.size + '</p>');
   $('#bowl-result').append('<p>Beans: ' + this.beans + '</p>');
   $('#bowl-result').append('<p>Meat: ' + this.meat + '</p>');
@@ -38,7 +36,6 @@ $(function() {
       toppings[i] = toppings[i].charAt(0).toUpperCase() + toppings[i].slice(1);
     }
     var toppingsList = toppings.join(', ');
-    console.log(toppingsList);
     
     var bowlPrice = parseInt($('#size').val())+parseInt($('#meat').val());
 

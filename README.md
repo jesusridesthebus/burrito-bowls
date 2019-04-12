@@ -1,11 +1,11 @@
-# Burrito Bowls
+# Ye Olde Burrito Bowls
 
 #### Epicodus solo project 4/12/19
 
 #### By **Liz Kelley**
 
 ## Website
-[xx](https://)
+[Ye Olde Burrito Bowls](https://jesusridesthebus.github.io/burrito-bowls/)
 
 ## Description
 
