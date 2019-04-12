@@ -41,5 +41,6 @@ $(function() {
 
     var burritoBowl = new Bowl(bowlSize, beans, meat, toppingsList, bowlPrice);
     burritoBowl.showPrice();
+    $('#bowl-result').show();
   });
 });
