@@ -1,8 +1,8 @@
-function Bowl(size, beans, meat, toppings, price) {
+function Bowl(size, beans, meat, toppingsList, price) {
   this.size = size,
   this.beans = beans,
   this.meat = meat,
-  this.toppings = [],
+  this.toppings = toppingsList,
   this.price = priceCalculation(price);
 }
 
@@ -21,16 +21,25 @@ Bowl.prototype.showPrice = function() {
   $('#bowl-result').append('<p>Bowl Price: ' + this.price + '</p>');
 }
 
+var toppings;
+var toppingsList;
+
 $(function() {
   $('form#burrito-form').submit(function(event) {
     event.preventDefault();
     var bowlSize = $('#size option:selected').text();
     var beans = $('#beans option:selected').text();
     var meat = $('#meat option:selected').text();
-    var toppingsList = $('input:checkbox[name=toppings]:checked').each(function() {
-      var toppings = $(this).text();
-      $('#bowl-result').append(toppings + ', ');
+    var toppings = [];
+    $('#toppings-section input:checkbox[name=toppings]:checked').each(function() {
+      toppings.push($(this).val());
     });
+    for(var i = 0; i < toppings.length; i++) {
+      toppings[i] = toppings[i].charAt(0).toUpperCase() + toppings[i].slice(1);
+    }
+    var toppingsList = toppings.join(', ');
+    console.log(toppingsList);
+    
     var bowlPrice = parseInt($('#size').val())+parseInt($('#meat').val());
 
     var burritoBowl = new Bowl(bowlSize, beans, meat, toppingsList, bowlPrice);
