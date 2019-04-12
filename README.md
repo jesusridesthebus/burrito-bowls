@@ -1,4 +1,4 @@
-# Pizza
+# Burrito Bowls
 
 #### Epicodus solo project 4/12/19
 
@@ -9,14 +9,14 @@
 
 ## Description
 
-This site will enable you to order a pizza, deciding on a pizza size, choosing between types of cheese, and selecting multiple toppings.
+This site will enable you to order a burrito bowl, deciding on a size, choosing between types of beans, and selecting multiple toppings.
 
 | Behavior | Input | Output | 
 | ------------- |:-------------:| -----:| 
-| Choose pizza size | medium | result of medium for pizza size, cost adjusts accordingly | 
-| Choose type of cheese | mozarella | mozarella will be added to the pizza, no additional cost | 
-| Choose multiple toppings | sausage, olives | sausage & olives will be added to the pizza & cost will increase accordingly | 
-| Submit order | medium pizza with mozarella, sausage & olives | Cost is added together for a total of $13.50 (medium $12 + sausage $1 + olives $.50 = $13.50) | 
+| Choose bowl size | regular size | result of regular for bowl size, cost adjusts accordingly | 
+| Choose type of beans | pinto | pinto beans will be added to the bowl, no additional cost | 
+| Choose multiple toppings | chicken, guacamole | chicken & guacamole will be added to the bowl & cost will increase accordingly | 
+| Submit order | regular-sized bowl with pinto beans, chicken & guacamole | Cost is added together for a total of $8 (regular size $5 + chicken $2 + guacamole $1 = $8) | 
 
 ## Setup/Installation Requirements
 

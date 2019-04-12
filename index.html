@@ -13,56 +13,59 @@
 <body>
   <main class="container">
     <h1>Pizza</h1>
-    <form class="form-group" id="pizza-form">
+    <form class="form-group" id="burrito-form">
       <section>
-        <p>Choose pizza size</p>
+        <p>Burrito Bowls: start with brown rice</p>
         <select class="form-control" id="size">
-          <option value="10">Small $10</option>
-          <option value="12">Medium $12</option>
-          <option value="15">Large $15</option>
+          <option value="5">Regular size $5</option>
+          <option value="7">Texas-sized $7</option>
         </select>
       </section>
 
-      <section id="cheese-section">
-        <label for="cheese">Choose your cheese type (no additional charge)</label>
+      <section id="bean-section">
+        <label for="cheese">Choose your beans</label>
         <select class="form-control" id="cheese">
-          <option value="0">Mozarella</option>
-          <option value="0">Vegan cheese</option>
-          <option value="0">No cheese</option>
+          <option value="0">Black</option>
+          <option value="0">Pinto</option>
+          <option value="0">Half of each</option>
+          <option value="0">No Beans</option>
         </select>
       </section>
 
       <section id="toppings-section">
         <p>Choose toppings</p>
-        <input type="checkbox" name="toppings" value="1">
-        <label for="toppings">Pepperoni + $1</label>
+        <input type="checkbox" name="toppings" value="0">
+        <label for="toppings">Pico de Gallo</label>
+        <br>
+        <input type="checkbox" name="toppings" value="0">
+        <label for="toppings">Olives</label>
+        <br>
+        <input type="checkbox" name="toppings" value="0">
+        <label for="toppings">Cheese</label>
+        <br>
+        <input type="checkbox" name="toppings" value="0">
+        <label for="toppings">Onions (ew, why)</label>
+        <br>
+        <input type="checkbox" name="toppings" value="0">
+        <label for="toppings">Lettuce</label>
         <br>
         <input type="checkbox" name="toppings" value="1">
-        <label for="toppings">Sausage + $1</label>
+        <label for="toppings">Guacamole + $1</label>
         <br>
         <input type="checkbox" name="toppings" value="1">
-        <label for="toppings">Canadian Bacon + $1</label>
+        <label for="toppings">Chicken + $2</label>
         <br>
-        <input type="checkbox" name="toppings" value=".5">
-        <label for="toppings">Mushrooms + $0.50</label>
+        <input type="checkbox" name="toppings" value="1">
+        <label for="toppings">Cow + $2</label>
         <br>
-        <input type="checkbox" name="toppings" value=".5">
-        <label for="toppings">Olives + $0.50</label>
-        <br>
-        <input type="checkbox" name="toppings" value=".5">
-        <label for="toppings">Peppers + $0.50</label>
-        <br>
-        <input type="checkbox" name="toppings" value=".5">
-        <label for="toppings">Onions (ew, why) + $0.50</label>
-        <br>
-        <input type="checkbox" name="toppings" value=".5">
-        <label for="toppings">The tears of my enemies + $0.50</label>
+        <input type="checkbox" name="toppings" value="1">
+        <label for="toppings">Pig + $2</label>
         <br>
       </section>
 
-
       <button type="submit" class="btn btn-dark">Order</button>
     </form>
+    <section id="bowl-result"><span class="bowl"></span></section>
   </main>
 </body>
 </html>
